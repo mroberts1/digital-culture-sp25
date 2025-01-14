@@ -3,10 +3,10 @@ title: ''
 author: ''
 format: html
 grid:
-  sidebar-width: 250px
-  margin-width: 350px
-  body-width: 600px
-  gutter-width: 2em
+  #sidebar-width: 400px
+  #margin-width: 300px
+  body-width: 650px
+  #gutter-width: 1em
 PrettyPDF-pdf: default
 ---
 
@@ -20,7 +20,14 @@ library(palmerpenguins)
 
 # VM303-01 Studies in Digital Media & Culture
 
-::: {layout="[[49, -2, 49]]"}
+[<br>[Department of Visual & Media Arts](https://emerson.edu/academics/academic-departments/visual-media-arts)\
+[Emerson College](https://emerson.edu/)\
+Spring Semester 2025\
+Tues/Thur 14 January---1 May 2024\ 
+6:00-7:45 p.m.\
+Ansin Building 604\
+[Dr. Martin Roberts](http://mroberts.emerson.build/)]{.aside}
+
 ```{ojs}
 {
   let fire = null;
@@ -98,21 +105,9 @@ cm = require("@charming-art/charming@0.0.6")
 import { quote } from "@pearmini/charming-shared"
 ```
 
-[Department of Visual & Media Arts](https://emerson.edu/academics/academic-departments/visual-media-arts)\
-[Emerson College](https://emerson.edu/)\
-Spring Semester 2025\
-Tues/Thur 14 January---1 May 2024\ 
-6:00-7:45 p.m.\
-Ansin Building 604\
-[Dr. Martin Roberts](http://mroberts.emerson.build/)
-:::
-
-------------------------------------------------------------------------
-
 <!-- [Syllabus](https://mroberts.emerson.build/courses/vm-303-01/sp25/) (outside Canvas) -->
 
 <!-- ------------------------------------------------------------------------ -->
-
 #### Overview
 
 This course considers the nature and contemporary forms of digital culture. Broadly speaking, this can be defined as the diverse range of symbolic practices through which communities affirm and maintain their cultural identities using digital media devices and interfaces in a globally networked society. While these practices are structured by deeply unequal power relations, are contradictory, and often come into conflict with one another, collectively they constitute what may be considered a global digital culture.
@@ -276,7 +271,7 @@ Topic: **Aesthetics**
 
 2024-02-20_Thur
 
-**Algorithm**
+Topic: **Algorithm**
 
 Kyle Chayka, **Filterworld** (selected chs.)
 
@@ -330,7 +325,7 @@ Replika
 
 *Week 10*
 
-**Artificial Friends**
+Topic: **Artificial Friends**
 
 2024-03-25_Tues
 
@@ -338,7 +333,7 @@ Kazuo Ishiguro, **Klara and the Sun**
 
 2024-03-27_Thur
 
-**After Yang** (kogonada, 2021)
+Film: **After Yang** (kogonada, 2021)
 ------------------------------------------------------------------------
 
 *Week 11*
@@ -359,7 +354,7 @@ Workshop: Introduction to P5.js
 
 *Week 12*
 
-Topic: **Algorithmic Aesthetics** (cont.)
+Topic: **Algorithmic Aesthetics**
 
 2024-04-08_Tues
 

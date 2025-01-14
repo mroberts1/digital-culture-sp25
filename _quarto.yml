@@ -11,7 +11,7 @@ website:
     card-style: summary_large_image
   favicon: "/img/cropped-cropped-flourish-1-270x270.gif"
   margin-header: |
-    ![](/img/CollegeLockupStacked.jpg)
+    ![](/img/CollegeLockupStacked.jpg){size="50%"}
   navbar:
     background: "#62259d"
     search: true
