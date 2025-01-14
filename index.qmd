@@ -1,0 +1,104 @@
+---
+title: ''
+author: ''
+format: html
+page-layout: full
+---
+
+```{r}
+#| label: load-packages
+#| include: false
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+# VM303-01 Studies in Digital Media & Culture
+
+::: {layout="[[50, 50]]"}
+```{ojs}
+canvas = {
+  const context = DOM.context2d(width, height);
+
+  let square_total = square_size + 2 * square_margin;
+  let nwidth = width - 2 * canvas_margin
+  let nheight = height - 2 * canvas_margin
+  
+  let swidth = Math.floor(nwidth / square_total) + 1;
+  let sheight = Math.floor(nheight / square_total) + 1;
+
+  let xnoise = tooloud.Simplex.create(d3.randomUniform(-100000, 100000)()).noise;
+  let ynoise = tooloud.Simplex.create(d3.randomUniform(-100000, 100000)()).noise;
+
+  let noises = [xnoise, ynoise];
+  let mags = [2.2*square_size, 2.2*square_size];
+  
+  let vertices = Array((swidth + 1) * (sheight + 1)).fill(0);
+
+  let hmargin = canvas_margin + square_margin + (nwidth % square_total) / 2;
+  let vmargin = canvas_margin + square_margin + (nheight % square_total) / 2;
+
+  let time = 0;
+
+  context.translate(hmargin, vmargin);
+  context.save();
+
+  while (true) {
+    context.clearRect(-hmargin, -vmargin, width, height);
+    
+    vertices = vertices.map((_, i) => noises.map((f, ni) => mags[ni] * f(i % swidth * 1.14214, Math.floor(i / swidth) * 3.23423, time)));
+    for (let x = 0; x < swidth - 1; x++) {  
+        for (let y = 0; y < sheight -1 ; y++) {
+          let tli = x + y * swidth;
+          let tri = x + 1 + y * swidth;
+          let bri = x + 1 + (y + 1) * swidth;
+          let bli = x + (y + 1) * swidth;
+
+          let tlp = [x * square_total + vertices[tli][0], y * square_total + vertices[tli][1]];
+          let trp = [x * square_total + square_size + vertices[tri][0], y * square_total + vertices[tri][1]];
+          let brp = [x * square_total + square_size + vertices[bri][0], y * square_total + square_size + vertices[bri][1]];
+          let blp = [x * square_total + vertices[bli][0], y * square_total + square_size + vertices[bli][1]];
+
+          let area = 0.5 * ((tlp[0]*trp[1] + trp[0]*brp[1] + brp[0]*blp[1] + blp[0]*tlp[1]) - (tlp[1]*trp[0] + trp[1]*brp[0] + brp[1]*blp[0] + blp[1]*tlp[0]));
+
+          context.fillStyle = d3.interpolateGnBu(area/(2.2 * square_size * square_size));
+          context.beginPath();
+          context.moveTo(...tlp);
+          context.lineTo(...trp);
+          context.lineTo(...brp);
+          context.lineTo(...blp);
+          context.fill();
+                  
+          context.restore();
+        }
+      } 
+      time += 0.005;
+      
+      yield context.canvas;
+  } 
+}
+
+height = 600
+
+width = 600
+
+square_size = 40
+
+square_margin = 1
+
+canvas_margin = 30
+
+tooloud = (await import("https://cdn.skypack.dev/tooloud@2.0.4")).default
+```
+
+[Department of Visual & Media Arts](https://emerson.edu/academics/academic-departments/visual-media-arts)\
+[Emerson College](https://emerson.edu/)\
+Spring Semester 2025\
+Tues/Thur 14 January---1 May 2024\
+6:00-7:45 p.m.\
+Ansin Building 604\
+[Dr. Martin Roberts](http://mroberts.emerson.build/)\
+:::
+<small>Image: Brian Houston, [Wave Grid](https://observablehq.com/@brian-houston/wave-grid)</small>
+
+------------------------------------------------------------------------

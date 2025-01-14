@@ -1,0 +1,464 @@
+---
+title: ''
+author: ''
+format: html
+grid:
+  sidebar-width: 250px
+  margin-width: 350px
+  body-width: 600px
+  gutter-width: 2em
+PrettyPDF-pdf: default
+---
+
+```{r}
+#| label: load-packages
+#| include: false
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+# VM303-01 Studies in Digital Media & Culture
+
+::: {layout="[[49, -2, 49]]"}
+```{ojs}
+{
+  let fire = null;
+
+  function update(app) {
+    const width = app.prop("width");
+    const height = app.prop("height");
+    if (!fire) fire = createFire(width, height);
+    updateFire(fire);
+    drawFire(app, fire);
+  }
+
+  function dispose(app) {
+    invalidation.then(() => app.dispose());
+  }
+
+  const app = cm.app({
+    renderer: await cm.terminal(),
+    frameRate: 15
+  });
+
+  return app.on("update", update).call(dispose).start().node();
+}
+
+function createFire(width, height) {
+  return cm.range(height).map(() => cm.range(width).map(() => 0));
+}
+
+function updateFire(fire) {
+  const h = fire.length;
+  const w = fire[0].length;
+  const max = h;
+  const noise = cm.randomNoise(0, max);
+
+  for (let y = 0; y < h - 1; y++) {
+    for (let x = 0; x < w; x++) {
+      const decay = cm.randomInt(0, 3);
+      const spread = cm.randomInt(-1, 1);
+      const index = Math.min(Math.max(0, x - spread), w - 1);
+      const target = fire[y + 1][index];
+      fire[y][x] = Math.max(0, target - decay);
+    }
+  }
+
+  for (let x = 0; x < w; x++) {
+    fire[h - 1][x] = noise(x / 10) | 0;
+  }
+}
+
+function drawFire(app, fire) {
+  const max = fire.length;
+
+  app.append(cm.clear, { fill: "black" });
+
+  app
+    .data(fire)
+    .append(cm.group, { x: 0, y: (_, i) => i })
+    .data((d) => d)
+    .append(cm.point, {
+      y: 0,
+      x: (_, i) => i,
+      stroke0: (d) => (d === 0 ? " " : cm.randomChar()),
+      stroke2: (d) => (d === 0 ? null : d)
+    })
+    .transform(cm.mapAttrs, {
+      stroke2: {
+        domain: [0, max],
+        interpolate: d3.interpolateCool
+      }
+    });
+}
+
+cm = require("@charming-art/charming@0.0.6")
+
+import { quote } from "@pearmini/charming-shared"
+```
+
+[Department of Visual & Media Arts](https://emerson.edu/academics/academic-departments/visual-media-arts)\
+[Emerson College](https://emerson.edu/)\
+Spring Semester 2025\
+Tues/Thur 14 January---1 May 2024\ 
+6:00-7:45 p.m.\
+Ansin Building 604\
+[Dr. Martin Roberts](http://mroberts.emerson.build/)
+:::
+
+------------------------------------------------------------------------
+
+<!-- [Syllabus](https://mroberts.emerson.build/courses/vm-303-01/sp25/) (outside Canvas) -->
+
+<!-- ------------------------------------------------------------------------ -->
+
+#### Overview
+
+This course considers the nature and contemporary forms of digital culture. Broadly speaking, this can be defined as the diverse range of symbolic practices through which communities affirm and maintain their cultural identities using digital media devices and interfaces in a globally networked society. While these practices are structured by deeply unequal power relations, are contradictory, and often come into conflict with one another, collectively they constitute what may be considered a global digital culture.
+
+A key component of the course is the automation of various forms of creative production, from writing to the visual arts, by natural-language processing computational systems (generally referred to as "artificial intelligence" or "AI"). The course addresses some of the many issues raised by such systems, with a particular focus on questions of aesthetics and the increasingly contested relationship between artists and algorithms. While such systems now demonstrably pass the Turing Test (i.e. pass as human or their products as human-produced), they also compel us to reconsider what we mean by "art," or "intelligence" itself.
+
+------------------------------------------------------------------------
+
+#### Format
+
+This is primarily a critical-thinking course, although it includes a practical and production component. This means that it encourages you to think reflexively and analytically about the digitally-mediated cultural practices that the course considers, as well as to participate in them; for example, you will be invited to experiment with image-synthesis and text-generating software and analyze the results using key concepts and theoretical frameworks.
+
+------------------------------------------------------------------------
+
+#### Outcomes
+
+By the end of the course, students will:
+
+-   have acquired a deeper understanding of the social, cultural, and political dimensions of digital technologies and networked communication;
+-   be able to apply critical thinking to contemporary developments in digital culture using relevant analytical concepts and both qualitative and quantitative methodologies such as cultural analytics;
+-   understand basic principles of algorithmic image synthesis on a variety of platforms;
+-   have reflected upon and discussed the larger significance of machine learning systems within global networked societies.
+
+------------------------------------------------------------------------
+
+#### Course Texts
+
+Selected chapters from the texts below will be made available as PDFs; you are nevertheless encouraged to purchase at least several of texts that are of interest and read more of them.
+
+Note on formats: A number of texts listed in the [Bibliography](bibliography.qmd) are available as e-books and/or audiobooks. You are encouraged to make use not only of print media but also of these screen-based and audio formats.
+
+- [Crystal Abidin](https://wishcrys.com/about-me/), **Internet Celebrity: Understanding Fame Online** (Bingley, UK: Emerald Publishing, 2018).  
+- [Kyle Chayka](https://www.kylechayka.com/), **Filterworld: How Algorithms Flattened Culture**. New York: Doubleday, 2024.  
+- Kazuo Ishiguro, [**Klara and the Sun: A Novel**](https://www.penguinrandomhouse.com/books/653825/klara-and-the-sun-a-gma-book-club-pick-by-kazuo-ishiguro/). New York: Penguin Random House, 2022.  
+- [Lev Manovich](https://manovich.net/) and Emanuele Arielli, [**Artificial Aesthetics: Generative AI, Art and Visual Media**](http://manovich.net/index.php/projects/artificial-aesthetics-book). 2019-24.  
+- [Joanne McNeil](https://joannemcneil.com/). **Lurking: How A Person Became A User** (New York: Farrar, Strauss, and Giroux, 2020).  
+- Liz Pelly, [**Mood Machine: The Rise of Spotify and the Costs of the Perfect Playlist**](https://www.simonandschuster.com/books/Mood-Machine/Liz-Pelly/9781668083505) (New York: Simon & Schuster, 2025).  
+- Min-Ha T. Pham, [**Asians Wear Clothes on the Internet: Race, Gender, and the Work of Personal Style Blogging**](https://www.dukeupress.edu/asians-wear-clothes-on-the-internet) (Durham, NC: Duke University Press, 2015).  
+
+#### Substack: Recommended blogs
+
+[GIRLS](https://www.freyaindia.co.uk/) (Freya India)  
+[*Internal Exile*](https://robhorning.substack.com/) (Rob Horning)  
+[Jenka Gurfinkel](https://substack.com/@jenka?utm_source=top-search)  
+[Marcus on AI](https://substack.com/@garymarcus?utm_source=top-search) (Gary Marcus)   
+[Telling The Bees](https://tellthebeees.substack.com/archive?sort=new)  
+
+#### Other Sources
+
+[Anthony's Look](https://www.instagram.com/anthonyslook/) ([Anthony Fung](https://www.com.cuhk.edu.hk/people/fung-anthony-y-h/), City University of Hong Kong)  
+[Lev Manovich](https://manovich.net)  
+[instar books](https://www.instarbooks.com/books/everyword.html)
+[TikTok Cultures Research Network](https://tiktokcultures.com/)  
+
+------------------------------------------------------------------------
+
+#### Assignments & Evaluation
+
+**Agenda (2) and Discussion Forum (20%)**  
+Twice during the semester. Short response (max. 250 words) post to weekly reading assignments, due on Canvas Tuesday at 12:00 pm. Two students will be assigned weekly, with others required to post at least one reply in the same week.
+
+**Commentary (20%)**  
+Weekly. Follow-up post (approx. 250 words) on assigned films or online videos screened at Thursday class. Due by Sunday of the week in question, and no later than the Tuesday of the week after.
+
+**Aesthetics Case Study (15%)**  
+Case study of an aesthetic movement or style, 1,000 words (4 pages, double-spaced). Due mid-semester.
+
+**Generative Art Project (15%)**  
+Using one of the generative art platforms focused on in the course (DALL-E 2, Midjourney, Stable Diffusion), submit one work that was generated using one of these systems. Images may be still or moving (e.g. animations, GIF loops, etc.)
+
+This work will be reviewed collectively by the group and displayed as a gallery, initally on Canvas, and later (with your permission) on the web.
+
+**Research Paper/Project (20%)**  
+Research on an approved topic relevant to the course. Individual or group. Further details will be provided after Spring Break. 1,250-1,500 words.
+
+**Engagement (10%)**  
+Includes attendance, punctuality, preparation, participation in class and/or online discussion,individual conferences. 
+
+------------------------------------------------------------------------
+
+#### Schedule of Classes
+
+------------------------------------------------------------------------
+
+*Week 1*
+
+2024-01-14_Tues
+
+Introduction
+
+2024-01-16_Thur
+
+**Smile for the Camera: Selfies**
+
+- "[Time Period Selfies](https://www.reddit.com/r/midjourney/comments/11vuvdk/time_period_selfies_time_traveler_shows_soldiers/?rdt=64935)" (**Reddit**, 2023)
+-   Jenka Gurfinkel, “[AI and the American Smile](https://medium.com/@socialcreature/ai-and-the-american-smile-76d23a0fbfaf)” (**Medium**, 17 March 2023)
+
+------------------------------------------------------------------------
+
+*Week 2*
+
+Topic: **Virtual Communities**
+
+2024-01-21_Tues
+
+Joanne McNeil, **Lurking: How A Person Became A User**: 
+
+- [Introduction](pdf/Lurking_Intro.pdf)
+- [Chapter 2](pdf/Lurking_Chapter2.pdf)
+
+2024-01-23_Thur
+
+------------------------------------------------------------------------
+
+*Week 3*
+
+Topic: **Lifestyle**
+
+2024-01-28_Tues
+
+Min-Ha T. Pham, [**Asians Wear Clothes on the Internet: Race, Gender, and the Work of Personal Style Blogging**](https://www.dukeupress.edu/asians-wear-clothes-on-the-internet), selected chs.
+
+2024-01-30_Thur
+
+[Anthony's Look](https://www.instagram.com/anthonyslook/) and other fashion blogs tba
+
+------------------------------------------------------------------------
+
+*Week 4*
+
+Topic: **Creators**
+
+2024-02-04_Tues
+
+- Stuart Cunningham and David Craig, **Creator Culture: An Introduction to Global Social Media Entertainment**, [Introduction](pdf/creator-culture-toc-intro.pdf)
+- Elaine Jing Zhao, "*Wanghong*: Liminial Chinese Creative Labor" (**Creator Culture**, ch. 11)
+- Roland Kelts, "[Japan’s virtual YouTubers have millions of real subscribers — and make millions of real dollars](https://restofworld.org/2021/vtubers/)" (**Rest of World**, 26 July 2021)
+
+2024-02-06_Thur
+
+------------------------------------------------------------------------
+
+*Week 5*
+
+Topic: **Aesthetics**
+
+2024-02-11_Tues
+
+- "[What Are Aesthetics?](https://aesthetics.fandom.com/wiki/Aesthetics_Wiki)" (**Aesthetics Wiki**) (read the articles in this section)
+- Guilherme Giolo and Michaël Berghman, "[The aesthetics of the self: The meaning-making of Internet aesthetics](pdf/giolo-berghman-aesthetics.pdf)
+
+2024-02-13_Thur
+
+------------------------------------------------------------------------
+
+*Week 6*
+
+2024-02-18_Tues NO CLASS (Mon schedule)
+
+**Coded Bias** (documentary, available on Netflix)
+
+2024-02-20_Thur
+
+**Algorithm**
+
+Kyle Chayka, **Filterworld** (selected chs.)
+
+**DEADLINE: Aesthetics case study**
+
+------------------------------------------------------------------------
+
+*Week 7*
+
+Topic: **Influencers and Celebrities**
+
+2024-02-25_Tues
+
+Crystal Abidin, **Internet Celebrities** (selected chs.)
+
+2024-02-27_Thur
+
+------------------------------------------------------------------------
+
+*Week 8*
+
+Topic: **Virtual Worlds*
+
+2024-03-04_Tues
+
+Screening: **We Met In Virtual Reality**  
+Readings tba
+
+2024-05-06_Thur
+
+------------------------------------------------------------------------
+
+**SPRING BREAK**
+
+------------------------------------------------------------------------
+
+*Week 9*
+
+Topic: **Chatbots**
+
+2024-03-18_Tues
+
+ELIZA
+Replika
+
+2024-03-20_Thur
+
+**Her** (Spike Jonze, 2013)
+
+------------------------------------------------------------------------
+
+*Week 10*
+
+**Artificial Friends**
+
+2024-03-25_Tues
+
+Kazuo Ishiguro, **Klara and the Sun**
+
+2024-03-27_Thur
+
+**After Yang** (kogonada, 2021)
+------------------------------------------------------------------------
+
+*Week 11*
+
+Topic: **Generative Media**
+
+2024-04-01_Tues
+
+[Generative Design](http://www.generative-gestaltung.de/2/) (website)
+
+[Generative Hut](https://www.generativehut.com/) (website)
+
+2024-04-03_Thur
+
+Workshop: Introduction to P5.js
+
+------------------------------------------------------------------------
+
+*Week 12*
+
+Topic: **Algorithmic Aesthetics** (cont.)
+
+2024-04-08_Tues
+
+Lev Manovich and Emmanuele Arielli, [**Artificial Aesthetics**](https://manovich.net/index.php/projects/artificial-aesthetics):
+
+- "Who is an Artist in AI Era?" (ch. 2)
+
+2024-04-10_Thur
+
+- "AI and Myths of Creativity" (ch. 4)
+
+Workshop: Introduction to Midjourney
+
+------------------------------------------------------------------------
+
+*Week 13*
+
+Topic: **Algorithmic Aesthetics** (cont.)
+
+2024-04-15_Tues
+
+Lev Manovich and Emmanuele Arielli, [**Artificial Aesthetics**](https://manovich.net/index.php/projects/artificial-aesthetics):
+
+- "Seven Arguments About AI Images and Generative Media" (ch. 5)
+
+Workshop: Introduction to ComfyUI
+
+2024-04-17_Thur NO CLASS (Make-up Day)
+
+------------------------------------------------------------------------
+
+*Week 14*
+
+2024-04-24_Tues
+
+Topic: **Algorithmic Aesthetics** (cont.)
+
+Lev Manovich and Emmanuele Arielli, [**Artificial Aesthetics**](https://manovich.net/index.php/projects/artificial-aesthetics):
+
+- "Separate and Reassemble: Generative AI and Media History" (ch. 7)
+
+2024-04-25_Thur
+
+Generative Art Projects
+
+------------------------------------------------------------------------
+
+*Week 15*
+
+2024-04-29_Tues
+
+Presentations: Research Paper/Project 
+
+2024-05-01_Thur
+
+Presentations: Research Paper/Project
+
+2024-05-01 Fri **Last day of classes**
+
+------------------------------------------------------------------------
+
+#### Policies
+
+------------------------------------------------------------------------
+
+##### Academic Honesty
+
+It is the responsibility of all Emerson students to know and adhere to the College's policy on plagiarism, which can be found at [emerson.edu/policies/plagiarism](https://emerson.edu/policies/plagiarism "Plagiarism"). If you have any question concerning the Emerson plagiarism policy or about documentation of sources in work you produce in this course, speak to your instructor.
+
+------------------------------------------------------------------------
+
+##### Diversity
+
+Every student in this class will be honored and respected as an individual with distinct experiences, talents, and backgrounds. Issues of diversity may be a part of class discussion, assigned material, and projects. The instructor will make every effort to ensure that an inclusive environment exists for all students. If you have any concerns or suggestions for improving the classroom climate, please do not hesitate to speak with the course instructor or to contact the Social Justice Center at 617-824-8528 or by email at [sjc\@emerson.edu](mailto:sjc@emerson.edu).
+
+------------------------------------------------------------------------
+
+##### Discrimination, Harassment, or Sexual Violence
+
+If you have been impacted by discrimination, harassment, or sexual violence, I am available to support you, and help direct you to available resources on and off campus. Additionally, the Office of Equal Opportunity ([oeo\@emerson.edu](mailto:oeo@emerson.edu "Email the Office of Equal Opportunity"); 617-824-8999) is available to meet with you and discuss options to address concerns and to provide you with support resources. Please note that I because I am an Emerson employee, any information shared with me related to discrimination, harassment, or sexual violence will also be shared with the Office of Equal Opportunity.  If you would like to speak with someone confidentially, please contact the Healing & Advocacy Collective, the Emerson Wellness Center, or the Center for Spiritual Life.
+
+------------------------------------------------------------------------
+
+##### Accessibility
+
+Emerson is committed to providing equal access and support to all students who qualify through the provision of reasonable accommodations, so that each student may fully participate in the Emerson experience. If you have a disability that may require accommodations, please contact Student Accessibility Services (SAS) at [SAS\@emerson.edu](mailto:SAS@emerson.edu) or 617-824-8592 to make an appointment with an SAS staff member.
+
+Students are encouraged to contact SAS early in the semester. Please be aware that accommodations are not applied retroactively.
+
+------------------------------------------------------------------------
+
+##### Writing & Academic Resource Center
+
+Students are encouraged to visit and utilize the staff and resources of Emerson's Writing Center, particularly if they are struggling with written assignments. The Writing Center is located at 216 Tremont Street on the 5th floor (tel. 617-824-7874).
+
+------------------------------------------------------------------------
+
+##### In-Class Recording
+
+Regardless of modality or whether this course is being recorded by the College with the permission of the students for classroom purposes, this class is considered a private environment and it is a setting in which copyrighted materials, creative works and educational records may be displayed. Audio or video recording, filming, photographing, viewing, transmitting, producing or publishing the image or voice of another person or that person's materials, creative works or educational records without the person's knowledge and expressed consent is strictly prohibited. 
+
+------------------------------------------------------------------------

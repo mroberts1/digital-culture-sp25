@@ -1,0 +1,70 @@
+---
+title: ''
+author: ''
+format: 
+  html
+grid:
+  sidebar-width: 250px
+  margin-width: 350px
+  body-width: 600px
+  gutter-width: 2em
+PrettyPDF-pdf: default
+---
+
+#### Select Bibliography
+
+\[A\] = audiobook ([Audible.com](http://audible.com/))
+
+[Abidin, Crystal](https://wishcrys.com/about-me/), **Internet Celebrity: Understanding Fame Online** (Bingley, UK: Emerald Publishing, 2018).
+
+boyd, danah, **It's Complicated: The Social Lives of Networked Teens** (New Haven: Yale University Press, 2014).
+
+Bruckman, Amy, **Should You Believe Wikipedia? Online Communities and the Construction of Knowledge** (Cambridge: Cambridge University Press, 2022).
+
+Brunton, Finn, and Helen Nissenbaum, **Obfuscation: A User's Guide for Privacy and Protest** (Cambridge: MIT Press, 2016).
+
+\[A\] [Chayka, Kyle](https://www.kylechayka.com/), **Filterworld: How Algorithms Flattened Culture** (New York: Doubleday, 2024).
+
+Coleman, Gabriella, **Hacker, Hoaxer, Whistleblower, Spy: The Many Faces of Anonymous** (London and New York: Verso, 2014).
+
+[Eichhorn, Kate](https://emerson.edu/faculty-staff-directory/kate-eichhorn), [**Content**](https://mitpress.mit.edu/9780262543286/content/) (Cambridge, MA: MIT Press, 2022).
+
+\[A\] [Hon, Adrian](https://mssv.net/). *You've Been Played: How Corporations, Governments, and Schools Use Games to Control Us All*. New York: Basic Books, 2022.
+
+\[A\] Ishiguro, Kazuo [**Klara and the Sun: A Novel**](https://www.penguinrandomhouse.com/books/653825/klara-and-the-sun-a-gma-book-club-pick-by-kazuo-ishiguro/). New York: Penguin Random House, 2022.
+
+Jackson, Sarah J., Moya Bailey, et al., **#Hashtag Activism: Networks of Race and Gender Justice** (Cambridge: MIT Press, 2020).
+
+\[A\] [Christine Lagorio-Chafkin](https://x.com/lagorio), **We Are the Nerds: The Birth and Tumultuous Life of Reddit, the Internet's Culture Laboratory**. New York: Hachette Books, 2018.
+
+[Manovich, Lev](https://manovich.net/), and Emanuele Arielli. [**Artificial Aesthetics: A Critical Guide to AI, Media and Design**](http://manovich.net/index.php/projects/artificial-aesthetics-book). 2019-24.
+
+Marcus, Gary, & Ernest Davis, **Rebooting AI: Building Artificial Intelligence We Can Trust** (New York: Pantheon Books, 2019).
+
+\[A\] [McCulloch, Gretchen](https://gretchenmcculloch.com/), [**Because Internet: Understanding the New Rules of Language**](https://gretchenmcculloch.com/book/). Riverhead Books, 2019.
+
+[McNeil, Joanne](https://joannemcneil.com/). **Lurking: How A Person Became A User** (New York: Farrar, Strauss, and Giroux, 2020).
+
+Nagle, Angela, **Kill All Normies: Online Culture Wars From 4Chan and Tumblr to Trump and the Alt-Right** (Alresford, Hampshire, UK: Zero Books, 2017). 
+
+\[A\] [Olson, Parmy](https://x.com/parmy), **Supremacy: AI, ChatGPT, and the Race that Will Change the World**. New York: MacMillan, 2024.
+
+O'Neil, Cathy, with Stephen Baker, **The Shame Machine: Who Profits in the New Age of Humiliation** (New York: Crown/Random House, 2022).
+
+\[A\] Pelly, Liz, [**Mood Machine: The Rise of Spotify and the Costs of the Perfect Playlist**](https://www.simonandschuster.com/books/Mood-Machine/Liz-Pelly/9781668083505) (New York: Simon & Schuster, 2025).
+
+Pham, Min-Ha T., [**Asians Wear Clothes on the Internet: Race, Gender, and the Work of Personal Style Blogging**](https://www.dukeupress.edu/asians-wear-clothes-on-the-internet) (Durham, NC: Duke University Press 2015).
+
+Phillips, Whitney, **This Is Why We Can't Have Nice Things: Mapping the Relationship between Online Trolling and Mainstream Culture** (Cambridge: MIT Press, 2015).
+
+\[A\] Phillips, Whitney, and Ryan M. Milner, **You Are Here: A Field Guide for Navigating Polarized Speech, Conspiracy Theories, and Our Polluted Media Landscape** (Cambridge: MIT Press, 2021)
+
+\[A\] [Allissa V. Richardson](https://allissavrichardson.com), **Bearing Witness While Black: African Americans, Smartphones, and the New Protest #Journalism** (Oxford: Oxford University Press, 2020).
+
+\[A\] Tiffany, Kaitlyn. **Everything I Need I Get From You: How Fangirls Created the Internet as We Know It** (Farrar, Strauss & Giroux, 2022).
+
+Tiqqun, **Preliminary Materials for a Theory of the Young-Girl**. Trans. Ariana Reines (New York: semiotext(e), 2012).
+
+\[A\] Womack, Ytasha L. [**Afrofuturism: The World of Black Sci-Fi and Fantasy Culture**](https://ebookcentral.proquest.com/lib/emerson/reader.action?docID=1381831&ppg=1) (Chicago: Lawrence Hill Books, 2013).
+
+*** 

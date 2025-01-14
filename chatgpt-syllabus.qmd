@@ -1,0 +1,126 @@
+---
+title: ''
+author: ''
+format: html
+grid:
+  sidebar-width: 250px
+  margin-width: 350px
+  body-width: 600px
+  gutter-width: 2em
+---
+
+```{r}
+#| label: load-packages
+#| include: false
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+**Prompt**\
+Write the syllabus for a 14-week introductory course on contemporary digital media and culture, providing specific weekly reading assignments of 2 articles or book chapters. The course should be global in scope, referencing English-language scholarship and examples from Asian and South America countries (Japan, China, South Korea) as well as Europe, North America, and Australia. The course should be structured into 3 or 4 sections, with the first being historical and the last addressing future developments. Include suggestions for 3 assignments, and provide full bibliographic citations for all sources used.
+
+***
+
+**Answer**\
+
+**Course Title: Contemporary Digital Media and Culture: A Global Perspective**
+
+**Course Description:**
+This course explores the historical, cultural, and technological evolution of digital media from a global perspective. By analyzing English-language scholarship and case studies from Asia, South America, Europe, North America, and Australia, students will gain an understanding of the digital age’s transformative effects. The course is structured into four sections: (1) Historical Contexts; (2) Social Media and Global Influences; (3) Digital Arts and Cultural Production; and (4) Future Trends and Ethical Challenges.
+
+**Course Structure and Weekly Readings**
+
+**Section 1: Historical Contexts (Weeks 1–3)**
+
+**Objective:** Understand the emergence of digital technologies and their early cultural implications.
+
+**Week 1: The Prehistory of Digital Media**\
+1. Janet Abbate, _Inventing the Internet_.\ Cambridge, MA: MIT Press, 1999. Chapter 3: “The Internet as a Research Tool.”\
+2. Fred Turner, _From Counterculture to Cyberculture_. Chicago: University of Chicago Press, 2006. Chapter 1: “The Whole Earth Catalog and the Countercultural Roots of the Internet.”
+
+**Week 2: Web 1.0 and the Early Digital Culture**\
+1. José van Dijck, _The Culture of Connectivity: A Critical History of Social Media_. Oxford: Oxford University Press, 2013. Chapter 1: “Engineering Sociality in a Culture of Connectivity.”\
+2. Lev Manovich, _The Language of New Media_. Cambridge, MA: MIT Press, 2001. Chapter 2: “What is New Media?”
+
+**Week 3: The Rise of the Global Internet**\
+1. Manuel Castells, _The Internet Galaxy: Reflections on the Internet, Business, and Society_. Oxford: Oxford University Press, 2001. Chapter 5: “The Global Network Society.”\
+2. Lisa Nakamura, “Cybertyping and the Work of Race in the Age of Digital Reproduction.” _New Media & Society_ 7, no. 5 (2002): 812–831.
+
+**Section 2: Social Media and Global Influences (Weeks 4–7)**
+
+**Objective:** Explore the rise of social media platforms and their effects on culture, activism, and identity across different regions.
+
+**Week 4: Social Media Ecosystems in Asia**\
+1. Crystal Abidin, _Internet Celebrity: Understanding Fame Online_. Bingley, UK: Emerald Publishing, 2018. Chapter 4: “Commercializing Visibility in Asia.”\
+2. Jing Wang, “The Politics of Weibo: How a Chinese Microblogging Platform Became a Site of Civic Engagement.” _China Perspectives_ 3 (2012): 29–39.
+
+**Week 5: Global Influencer Culture**\
+1. Brooke Erin Duffy, _(Not) Getting Paid to Do What You Love: Gender, Social Media, and Aspirational Work_. New Haven, CT: Yale University Press, 2017. Chapter 2: “Amateur Creators and Digital Labor.”\
+2. Zeynep Tufekci, _Twitter and Tear Gas: The Power and Fragility of Networked Protest_. New Haven, CT: Yale University Press, 2017. Chapter 4: “The Networked Public Sphere and Social Movements.”
+
+**Week 6: Digital Activism in South America**\
+1. Silvia Gutiérrez and Claudia Magallanes-Blanco, “Latin America’s Digital Activism.” _Digital Activism in the Social Media Era_. Palgrave Macmillan, 2020.\
+2. Raul Ferrer-Conill, “Activism in Brazil’s Favelas: Social Media’s Role in Political Organization.” _New Media & Society_ 21, no. 8 (2019): 1750–1765.
+
+**Week 7: Algorithms and Cultural Production**\
+1. Shoshana Zuboff, _The Age of Surveillance Capitalism_. New York: PublicAffairs, 2019. Chapter 7: “The Reality Business.”\
+2. Safiya Umoja Noble, _Algorithms of Oppression: How Search Engines Reinforce Racism_. New York: NYU Press, 2018. Chapter 1: “A Society Searching.”
+
+**Section 3: Digital Arts and Cultural Production (Weeks 8–11)**
+
+**Objective:** Examine how digital technologies have reshaped artistic production, gaming, and media industries.
+
+**Week 8: K-pop and Digital Fandom**\
+1. Sun Jung, _K-pop Beyond Asia: Performing Transnational Korean Identities_. Urbana: University of Illinois Press, 2016. Chapter 3: “YouTube and the Globalization of K-pop.”\
+2. Kim Suk-young, _K-pop Live: Fans, Idols, and Multimedia Performance_. Stanford: Stanford University Press, 2018. Chapter 2: “Fan Labor and Global Media Markets.”
+
+**Week 9: AI in Creative Industries**\
+1. Ahmed Elgammal, et al., “Creative Adversarial Networks: Generating Art by Learning About Styles and Deviating from Style Norms.” _ArXiv_, 2017. [Online](https://arxiv.org/abs/1706.07068).\
+2. Lev Manovich, _AI Aesthetics_. Strelka Press, 2018. Chapter 2: “Machines as Artists.”
+
+**Week 10: Gaming and Virtual Worlds**\
+1. T.L. Taylor, _Watch Me Play: Twitch and the Rise of Game Live Streaming_. Princeton: Princeton University Press, 2018. Chapter 4: “The Culture of Live Streaming.”\
+2. Adrienne Shaw, _Gaming at the Edge: Sexuality and Gender at the Margins of Gamer Culture_. Minneapolis: University of Minnesota Press, 2014. Chapter 5: “Gaming Communities and Marginalized Identities.”
+
+**Week 11: Global Cinema and Streaming Media**\
+1. Ramon Lobato, _Netflix Nations: The Geography of Digital Distribution_. New York: NYU Press, 2019. Chapter 3: “Globalizing Film and Television.”\
+2. Jin Dal Yong, _Transnational Korean Cinema: Cultural Intermediaries, Soft Power, and the Construction of the Film Industry_. New Brunswick: Rutgers University Press, 2020. Chapter 2: “Soft Power in Digital Media.”
+
+**Section 4: Future Trends and Ethical Challenges (Weeks 12–14)**
+
+**Objective:** Analyze the future of digital media and its ethical challenges in a globalized world.
+
+**Week 12: The Ethics of AI and Automation**\
+1. Kate Crawford, _Atlas of AI: Power, Politics, and the Planetary Costs of Artificial Intelligence_. New Haven: Yale University Press, 2021. Chapter 4: “Data Colonialism.”\
+2. Virginia Eubanks, _Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor_. New York: St. Martin’s Press, 2018. Chapter 1: “Digital Poorhouses.”
+
+**Week 13: Climate Change and Digital Technologies**\
+1. Max Tegmark, _Life 3.0: Being Human in the Age of Artificial Intelligence_. New York: Alfred A. Knopf, 2017. Chapter 9: “AI’s Role in Climate Solutions.”\
+2. Ingrid Burrington, “The Environmental Cost of Cloud Computing.” _The Atlantic_, 2018. [Online](https://www.theatlantic.com/technology/archive/2018/06/data-centers-environmental-impact/565733/).
+
+**Week 14: Digital Futures**\
+1. Manuel Castells, _Networks of Outrage and Hope: Social Movements in the Internet Age_. Cambridge, UK: Polity, 2015. Chapter 8: “Digital Revolution and Societal Change.”\
+2. Siva Vaidhyanathan, _Antisocial Media: How Facebook Disconnects Us and Undermines Democracy_. Oxford: Oxford University Press, 2018. Chapter 6: “A Future of Better Platforms.”
+  
+**Assignments**
+
+1. **Comparative Essay (Week 5):**\ Compare the role of social media in two different cultural contexts (e.g., China and Brazil).\
+• _Length:_ 1,500 words.\
+• _Objective:_ Analyze how political, cultural, and economic factors shape digital communication globally.
+
+2. **Group Presentation (Week 9):**\ Examine the global influence of a digital cultural phenomenon (e.g., K-pop or Netflix).\
+• _Length:_ 15-minute group presentation.\
+• _Objective:_ Investigate the interplay between digital media and cultural identity.
+
+3. **Final Research Paper (Week 14):**\ Explore an ethical or cultural debate related to digital media (e.g., AI ethics or surveillance capitalism).\
+• _Length:_ 3,000 words.\
+• _Objective:_ Synthesize course concepts to develop an in-depth critical analysis.
+
+**Evaluation**\
+• Participation (15%)\
+• Comparative Essay (20%)\
+• Group Presentation (25%)\
+• Final Research Paper (40%)\
+
+This syllabus introduces students to the complex interplay between digital media, culture, and society, emphasizing global contexts and future challenges.
