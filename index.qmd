@@ -78,9 +78,9 @@ canvas = {
   } 
 }
 
-height = 600
+height = 500
 
-width = 600
+width = 500
 
 square_size = 40
 
