@@ -160,7 +160,7 @@ Note on formats: A number of texts listed in the [Bibliography](bibliography.qmd
 [Anthony's Look](https://www.instagram.com/anthonyslook/) ([Anthony Fung](https://www.com.cuhk.edu.hk/people/fung-anthony-y-h/), City University of Hong Kong)  
 [Lev Manovich](https://manovich.net)  
 [instar books](https://www.instarbooks.com/books/everyword.html)  
-[Selfies Researcher Network](https://selfieresearchers.com)  
+[Selfies Researchers Network](https://selfieresearchers.com)  
 [TikTok Cultures Research Network](https://tiktokcultures.com/)  
 
 ------------------------------------------------------------------------
