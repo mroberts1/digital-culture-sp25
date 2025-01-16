@@ -140,10 +140,10 @@ Selected chapters from the texts below will be made available as PDFs; you are n
 Note on formats: A number of texts listed in the [Bibliography](bibliography.qmd) are available as e-books and/or audiobooks. You are encouraged to make use not only of print media but also of these screen-based and audio formats.
 
 - [Crystal Abidin](https://wishcrys.com/about-me/), **Internet Celebrity: Understanding Fame Online** (Bingley, UK: Emerald Publishing, 2018).  
-- [Kyle Chayka](https://www.kylechayka.com/), **Filterworld: How Algorithms Flattened Culture**. New York: Doubleday, 2024.  
+- [Kyle Chayka](https://www.kylechayka.com/), [**Filterworld: How Algorithms Flattened Culture**](https://www.kylechayka.com/filterworld). New York: Doubleday, 2024.  
 - Kazuo Ishiguro, [**Klara and the Sun: A Novel**](https://www.penguinrandomhouse.com/books/653825/klara-and-the-sun-a-gma-book-club-pick-by-kazuo-ishiguro/). New York: Penguin Random House, 2022.  
 - [Lev Manovich](https://manovich.net/) and Emanuele Arielli, [**Artificial Aesthetics: Generative AI, Art and Visual Media**](http://manovich.net/index.php/projects/artificial-aesthetics-book). 2019-24.  
-- [Joanne McNeil](https://joannemcneil.com/). **Lurking: How A Person Became A User** (New York: Farrar, Strauss, and Giroux, 2020).  
+- [Joanne McNeil](https://joannemcneil.com/). [**Lurking: How A Person Became A User**](https://us.macmillan.com/books/9781250785756/lurking/) (New York: Farrar, Strauss, and Giroux, 2020).  
 - Liz Pelly, [**Mood Machine: The Rise of Spotify and the Costs of the Perfect Playlist**](https://www.simonandschuster.com/books/Mood-Machine/Liz-Pelly/9781668083505) (New York: Simon & Schuster, 2025).  
 - Min-Ha T. Pham, [**Asians Wear Clothes on the Internet: Race, Gender, and the Work of Personal Style Blogging**](https://www.dukeupress.edu/asians-wear-clothes-on-the-internet) (Durham, NC: Duke University Press, 2015).  
 
@@ -159,7 +159,8 @@ Note on formats: A number of texts listed in the [Bibliography](bibliography.qmd
 
 [Anthony's Look](https://www.instagram.com/anthonyslook/) ([Anthony Fung](https://www.com.cuhk.edu.hk/people/fung-anthony-y-h/), City University of Hong Kong)  
 [Lev Manovich](https://manovich.net)  
-[instar books](https://www.instarbooks.com/books/everyword.html)
+[instar books](https://www.instarbooks.com/books/everyword.html)  
+[Selfies Researcher Network](https://selfieresearchers.com)  
 [TikTok Cultures Research Network](https://tiktokcultures.com/)  
 
 ------------------------------------------------------------------------
@@ -167,7 +168,7 @@ Note on formats: A number of texts listed in the [Bibliography](bibliography.qmd
 #### Assignments & Evaluation
 
 **Agenda (2) and Discussion Forum (20%)**  
-Twice during the semester. Short response (max. 250 words) post to weekly reading assignments, due on Canvas Tuesday at 12:00 pm. Two students will be assigned weekly, with others required to post at least one reply in the same week.
+Twice during the semester. Short response (max. 250 words) post to weekly reading assignments, due on Canvas Tuesday at 12:00 pm. One  student will be assigned weekly, with the others required to post at least one reply in the same week.
 
 **Commentary (20%)**  
 Weekly. Follow-up post (approx. 250 words) on assigned films or online videos screened at Thursday class. Due by Sunday of the week in question, and no later than the Tuesday of the week after.
@@ -213,7 +214,7 @@ Topic: **Virtual Communities**
 
 2024-01-21_Tues
 
-Joanne McNeil, **Lurking: How A Person Became A User**: 
+[Joanne McNeil](https://joannemcneil.com/), [**Lurking: How A Person Became A User**](https://us.macmillan.com/books/9781250785756/lurking/): 
 
 - [Introduction](/pdf/Lurking_Intro.pdf)
 - [Chapter 2](/pdf/Lurking_Chapter2.pdf)
@@ -273,7 +274,7 @@ Topic: **Aesthetics**
 
 Topic: **Algorithm**
 
-Kyle Chayka, **Filterworld** (selected chs.)
+[Kyle Chayka](https://www.kylechayka.com/), [**Filterworld**](https://www.kylechayka.com/filterworld) (selected chs.)
 
 **DEADLINE: Aesthetics case study**
 
