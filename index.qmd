@@ -2,7 +2,7 @@
 title: ''
 author: ''
 format: html
-page-layout: full
+page-layout: article
 ---
 
 ```{r}

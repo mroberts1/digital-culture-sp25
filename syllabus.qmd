@@ -215,8 +215,8 @@ Topic: **Virtual Communities**
 
 Joanne McNeil, **Lurking: How A Person Became A User**: 
 
-- [Introduction](pdf/Lurking_Intro.pdf)
-- [Chapter 2](pdf/Lurking_Chapter2.pdf)
+- [Introduction](/pdf/Lurking_Intro.pdf)
+- [Chapter 2](/pdf/Lurking_Chapter2.pdf)
 
 2024-01-23_Thur
 
@@ -334,6 +334,7 @@ Kazuo Ishiguro, **Klara and the Sun**
 2024-03-27_Thur
 
 Film: **After Yang** (kogonada, 2021)
+
 ------------------------------------------------------------------------
 
 *Week 11*
