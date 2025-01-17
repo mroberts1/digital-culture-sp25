@@ -195,11 +195,11 @@ Includes attendance, punctuality, preparation, participation in class and/or onl
 
 *Week 1*
 
-2024-01-14_Tues
+2025-01-14_Tues
 
 Introduction
 
-2024-01-16_Thur
+2025-01-16_Thur
 
 **Smile for the Camera: Selfies**
 
@@ -212,14 +212,14 @@ Introduction
 
 Topic: **Virtual Communities**
 
-2024-01-21_Tues
+2025-01-21_Tues
 
 [Joanne McNeil](https://joannemcneil.com/), [**Lurking: How A Person Became A User**](https://us.macmillan.com/books/9781250785756/lurking/): 
 
 - [Introduction](/pdf/Lurking_Intro.pdf)
 - [Chapter 2](/pdf/Lurking_Chapter2.pdf)
 
-2024-01-23_Thur
+2025-01-23_Thur
 
 ------------------------------------------------------------------------
 
@@ -227,11 +227,11 @@ Topic: **Virtual Communities**
 
 Topic: **Lifestyle**
 
-2024-01-28_Tues
+2025-01-28_Tues
 
 Min-Ha T. Pham, [**Asians Wear Clothes on the Internet: Race, Gender, and the Work of Personal Style Blogging**](https://www.dukeupress.edu/asians-wear-clothes-on-the-internet), selected chs.
 
-2024-01-30_Thur
+2025-01-30_Thur
 
 [Anthony's Look](https://www.instagram.com/anthonyslook/) and other fashion blogs tba
 
@@ -241,13 +241,13 @@ Min-Ha T. Pham, [**Asians Wear Clothes on the Internet: Race, Gender, and the Wo
 
 Topic: **Creators**
 
-2024-02-04_Tues
+2025-02-04_Tues
 
 - Stuart Cunningham and David Craig, **Creator Culture: An Introduction to Global Social Media Entertainment**, [Introduction](pdf/creator-culture-toc-intro.pdf)
 - Elaine Jing Zhao, "*Wanghong*: Liminial Chinese Creative Labor" (**Creator Culture**, ch. 11)
 - Roland Kelts, "[Japan’s virtual YouTubers have millions of real subscribers — and make millions of real dollars](https://restofworld.org/2021/vtubers/)" (**Rest of World**, 26 July 2021)
 
-2024-02-06_Thur
+2025-02-06_Thur
 
 ------------------------------------------------------------------------
 
@@ -255,22 +255,22 @@ Topic: **Creators**
 
 Topic: **Aesthetics**
 
-2024-02-11_Tues
+2025-02-11_Tues
 
 - "[What Are Aesthetics?](https://aesthetics.fandom.com/wiki/Aesthetics_Wiki)" (**Aesthetics Wiki**) (read the articles in this section)
 - Guilherme Giolo and Michaël Berghman, "[The aesthetics of the self: The meaning-making of Internet aesthetics](pdf/giolo-berghman-aesthetics.pdf)
 
-2024-02-13_Thur
+2025-02-13_Thur
 
 ------------------------------------------------------------------------
 
 *Week 6*
 
-2024-02-18_Tues NO CLASS (Mon schedule)
+2025-02-18_Tues NO CLASS (Mon schedule)
 
 **Coded Bias** (documentary, available on Netflix)
 
-2024-02-20_Thur
+2025-02-20_Thur
 
 Topic: **Algorithm**
 
@@ -284,11 +284,11 @@ Topic: **Algorithm**
 
 Topic: **Influencers and Celebrities**
 
-2024-02-25_Tues
+2025-02-25_Tues
 
 Crystal Abidin, **Internet Celebrities** (selected chs.)
 
-2024-02-27_Thur
+2025-02-27_Thur
 
 ------------------------------------------------------------------------
 
@@ -296,12 +296,12 @@ Crystal Abidin, **Internet Celebrities** (selected chs.)
 
 Topic: **Virtual Worlds*
 
-2024-03-04_Tues
+2025-03-04_Tues
 
 Screening: **We Met In Virtual Reality**  
 Readings tba
 
-2024-05-06_Thur
+2025-05-06_Thur
 
 ------------------------------------------------------------------------
 
@@ -313,12 +313,12 @@ Readings tba
 
 Topic: **Chatbots**
 
-2024-03-18_Tues
+2025-03-18_Tues
 
 ELIZA
 Replika
 
-2024-03-20_Thur
+2025-03-20_Thur
 
 **Her** (Spike Jonze, 2013)
 
@@ -328,11 +328,11 @@ Replika
 
 Topic: **Artificial Friends**
 
-2024-03-25_Tues
+2025-03-25_Tues
 
 Kazuo Ishiguro, **Klara and the Sun**
 
-2024-03-27_Thur
+2025-03-27_Thur
 
 Film: **After Yang** (kogonada, 2021)
 
@@ -342,13 +342,13 @@ Film: **After Yang** (kogonada, 2021)
 
 Topic: **Generative Media**
 
-2024-04-01_Tues
+2025-04-01_Tues
 
 [Generative Design](http://www.generative-gestaltung.de/2/) (website)
 
 [Generative Hut](https://www.generativehut.com/) (website)
 
-2024-04-03_Thur
+2025-04-03_Thur
 
 Workshop: Introduction to P5.js
 
@@ -358,13 +358,13 @@ Workshop: Introduction to P5.js
 
 Topic: **Algorithmic Aesthetics**
 
-2024-04-08_Tues
+2025-04-08_Tues
 
 Lev Manovich and Emmanuele Arielli, [**Artificial Aesthetics**](https://manovich.net/index.php/projects/artificial-aesthetics):
 
 - "Who is an Artist in AI Era?" (ch. 2)
 
-2024-04-10_Thur
+2025-04-10_Thur
 
 - "AI and Myths of Creativity" (ch. 4)
 
@@ -376,7 +376,7 @@ Workshop: Introduction to Midjourney
 
 Topic: **Algorithmic Aesthetics** (cont.)
 
-2024-04-15_Tues
+2025-04-15_Tues
 
 Lev Manovich and Emmanuele Arielli, [**Artificial Aesthetics**](https://manovich.net/index.php/projects/artificial-aesthetics):
 
@@ -384,13 +384,13 @@ Lev Manovich and Emmanuele Arielli, [**Artificial Aesthetics**](https://manovich
 
 Workshop: Introduction to ComfyUI
 
-2024-04-17_Thur NO CLASS (Make-up Day)
+2025-04-17_Thur NO CLASS (Make-up Day)
 
 ------------------------------------------------------------------------
 
 *Week 14*
 
-2024-04-24_Tues
+2025-04-24_Tues
 
 Topic: **Algorithmic Aesthetics** (cont.)
 
@@ -398,7 +398,7 @@ Lev Manovich and Emmanuele Arielli, [**Artificial Aesthetics**](https://manovich
 
 - "Separate and Reassemble: Generative AI and Media History" (ch. 7)
 
-2024-04-25_Thur
+2025-04-25_Thur
 
 Generative Art Projects
 
@@ -406,15 +406,15 @@ Generative Art Projects
 
 *Week 15*
 
-2024-04-29_Tues
+2025-04-29_Tues
 
 Presentations: Research Paper/Project 
 
-2024-05-01_Thur
+2025-05-01_Thur
 
 Presentations: Research Paper/Project
 
-2024-05-01 Fri **Last day of classes**
+2025-05-01 Fri **Last day of classes**
 
 ------------------------------------------------------------------------
 
